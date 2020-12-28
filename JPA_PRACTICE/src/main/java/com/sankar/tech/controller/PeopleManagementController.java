@@ -86,7 +86,8 @@ public class PeopleManagementController {
 		else
 			directionRef = Direction.DESC;
 		
-		Pageable firstPageWithTwoElements = PageRequest.of(page, size, directionRef, properties);
+		Pageable firstPageWithTwoElements = PageRequest.
+				of(page, size, directionRef, properties);
 		
 		//PageRequest.of(page, size);
 		//PageRequest.of(page, size, directionRef, properties);
